@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="logIn.css">
+        <script src="../script.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="header">
+            
+                <a class="link" href="https://www.amazon.com/" target="_blank">
+                    <img class="logoLink" src="../imagini/amazon.jpg">
+                    
+                </a>
+          
+            
+        </header>
+        
+        <main>
+            <section class="formular">
+                <div class="titlu">Sign In</div>
+                <div class="name">
+                    <input  type="text" placeholder="First Name" id="firstName" autocomplete="off">
+                    <input  type="text" placeholder="Last Name" id="lastName" autocomplete="off">
+                </div>
+                
+                <input class="email" type="text" placeholder="Email" id="email" autocomplete="off">
+
+                <div class="password">
+                    <input  type="password" placeholder="Password" id="password" autocomplete="off">
+                    <input  type="password" placeholder="Confirm Password" id="confPassword" autocomplete="off">
+                </div>
+                
+                <div class="phoneAndDate">
+                    <input  type="text" placeholder="Phone Number" id="phone" autocomplete="off">
+                    <input  type="date"  placeholder="dd-mm-yyyy" value="" id="date" autocomplete="off">
+                </div>
+
+                <input class="address" type="text" placeholder="Address" id="address" autocomplete="off">
+
+                <div class="cityCounty">
+                    <input  type="text" placeholder="City" id="city" autocomplete="off">
+                    <input  type="text" placeholder="County" id="county" autocomplete="off">
+                </div>
+
+                <div class="countryZip">
+                    <input class="input" type="text" placeholder="Country" id="country" autocomplete="off">
+                    <input  type="text" placeholder="Zip Code" id="zip" autocomplete="off"> 
+                </div>
+                <div class="terms">
+                    <input class="input" type="checkbox" id="terms">I agree to the Terms and Conditions
+                </div>
+                
+
+                
+                <button class="SignInBtn" onclick="addUtilizator();">
+                    Sign In 
+                </button>
+            </section>
+        </main>
+        
+</html>

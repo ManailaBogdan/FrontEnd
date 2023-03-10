@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First project</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="general.css">
+        <script src="script.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="stanga">
+                <a class="link" href="https://www.amazon.com/" target="_blank">
+                    <img class="logoLink" src="imagini/amazon.jpg">
+                    
+                </a>
+            </div>
+            
+            <div class="centru">
+                <input class="searchBar" type="text" placeholder="Search" id="search" autocomplete="off">
+                <button class="lupaBtn" onclick="addTitle();">
+                    <img class="lupaLogo" src="imagini/lupa.svg">
+                    <div class="btnInfo">Search</div>
+                </button>
+                <button class="micBtn">
+                    <img class="micLogo" src="imagini/microfon.svg">
+                    <div class="btnInfo">Voice Search</div>
+                </button>
+                
+            </div>
+
+            <div class="dreapta">
+                
+                <button class="cart">
+                    <div class="numarProduse" id="nrProduse">0</div>
+                    
+                    <img class="cartLogo" src="imagini/cart.png">
+                    <div class="btnInfo">See Cart</div>
+                </button>  
+                
+                <button class="user">
+                    <a href="LogIn/logIn.html" target="_blank">
+                        <img class="userLogo" src="imagini/user.jpg">
+                        <div class="btnInfo" id="userInfo">Log In</div>
+                    </a>
+                </button>
+                
+                <button class="settings">
+                    <img class="settingsLogo" src="imagini/settings.jpg">
+                    <div class="btnInfo">Settings</div>
+                </button>
+
+            </div>
+            
+        </header>
+
+        <nav class="sidebar">
+            <button class="butonSide">
+                All
+            </button>
+            <button class="butonSide">
+                Nike
+            </button>
+            <button class="butonSide">
+                Adidas
+            </button>
+            <button class="butonSide">
+                Puma
+            </button>
+            <button class="butonSide">
+                Converse
+            </button>
+            <button class="butonSide">
+                Vans
+            </button>
+        </nav>
+
+        <main>
+            <h1 id="title">All</h1>
+
+            <section class="grid">
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/nike.jpg">
+                        <p class="articol">Nike Black Running Shoes</p>
+                        
+                    </div>
+    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 40$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                    
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/blazers.jpg">
+                        <p class="articol">Nike Blazer mid 77</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 70$ - <span class="notInStock">not in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/vans.jpg">
+                        <p class="articol">Vans Old Skool</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 50$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/nike.jpg">
+                        <p class="articol">Nike Black Running Shoes</p>
+                        
+                    </div>
+    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 40$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                    
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/blazers.jpg">
+                        <p class="articol">Nike Blazer mid 77</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 70$ - <span class="notInStock">not in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/vans.jpg">
+                        <p class="articol">Vans Old Skool</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 50$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/nike.jpg">
+                        <p class="articol">Nike Black Running Shoes</p>
+                        
+                    </div>
+    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 40$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                    
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/blazers.jpg">
+                        <p class="articol">Nike Blazer mid 77</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 70$ - <span class="notInStock">not in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/vans.jpg">
+                        <p class="articol">Vans Old Skool</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 50$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/nike.jpg">
+                        <p class="articol">Nike Black Running Shoes</p>
+                        
+                    </div>
+    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 40$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                    
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/blazers.jpg">
+                        <p class="articol">Nike Blazer mid 77</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 70$ - <span class="notInStock">not in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/vans.jpg">
+                        <p class="articol">Vans Old Skool</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 50$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/nike.jpg">
+                        <p class="articol">Nike Black Running Shoes</p>
+                        
+                    </div>
+    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 40$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                    
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/blazers.jpg">
+                        <p class="articol">Nike Blazer mid 77</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 70$ - <span class="notInStock">not in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+                <div class="produs">
+                    <div class="infoProdus">
+                        <img class="imagine" src="imagini/vans.jpg">
+                        <p class="articol">Vans Old Skool</p>
+                        
+                    </div>
+                    
+                    <div class="butoaneSiPret">
+                        <p class="pret">Price: 50$ - <span class="inStock">in stock</span></p>
+                        <button class="toCart" onclick="addToCart();">Add to cart</button>
+                        <button class="buy">Buy now</button>
+                    </div>
+                </div>
+    
+            </section>
+        </main>
+        
+    </body>
+</html>
+
+
+
+
+
